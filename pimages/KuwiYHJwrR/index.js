@@ -6,7 +6,7 @@ $("#button1").on('click', function() {
 	i++;
 	$(this).append(" " + i);
 	$(this).clone(true).appendTo("body");
-	$("<img src='/Gopher-v0.2/pdesign/pimages/KuwiYHJwrR/Yoruba_Mask.gif' style='width:" + insertimagew + "px;'>").prependTo(this);
+	$("<img src='/parametric-design/pimages/KuwiYHJwrR/Yoruba_Mask.gif' style='width:" + insertimagew + "px;'>").prependTo(this);
 });
 
 });

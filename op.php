@@ -2,8 +2,6 @@
 ini_set('error_reporting', E_ALL & ~E_DEPRECATED & ~E_NOTICE);
 session_start();
 
-/*gopher:'php begin 2'*/
-
 
 // Show PHP errors (during development only)
 //error_reporting(E_ALL | E_STRICT);
@@ -17,7 +15,7 @@ $dbname = 'pdesign';
 $mongo = new MongoClient("mongodb://".$dbhost);
 $mongodb = $mongo->$dbname;
 
-$GlobalRoot = '/Gopher-v0.2/pdesign/';
+$GlobalRoot = '/parametric-design/';
 
 
 // Get the users collection
@@ -382,10 +380,10 @@ if ( ((count($compactcode)==1) && ($code!="")) || ((count($compactcode)==2) && (
       $version = $project["version"];
       $CurrentCode = $code;
       $CurrentVersion = $project['version'];
-      header("Location: /Gopher-v0.2/pdesign/".$CurrentCode."/".$version);
+      header("Location: /parametric-design/".$CurrentCode."/".$version);
       die();
    } else {
-      header("Location: /Gopher-v0.2/pdesign/".GenerateNewPage());
+      header("Location: /parametric-design/".GenerateNewPage());
       die();
    }
 } else
@@ -435,11 +433,11 @@ if ( (count($compactcode)==2) && ($code!="") && ($compactcode[1]!="")) {
       $css = $project["css"];
       $js = $project["js"];
    } else {
-      header("Location: /Gopher-v0.2/pdesign/".GenerateNewPage());
+      header("Location: /parametric-design/".GenerateNewPage());
       die();
    }
 } else {
-   header("Location: /Gopher-v0.2/pdesign/".GenerateNewPage());
+   header("Location: /parametric-design/".GenerateNewPage());
    die();
 }
 

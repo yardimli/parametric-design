@@ -15,7 +15,7 @@ var LastEditor;
 var paramArray = [];
 var ParametersModalCloseWithSave = false;
 
-var GlobalRoot = '/Gopher-v0.2/pdesign/';
+var GlobalRoot = '/parametric-design/';
 
 var rtime;
 var timeout = false;

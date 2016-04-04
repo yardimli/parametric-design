@@ -24,7 +24,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/Gopher-v0.2/pdesign/member',
+	'url' => 'http://localhost/parametric-design/member',
 
 	/*
 	|--------------------------------------------------------------------------
